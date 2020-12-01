@@ -1,0 +1,89 @@
+&body_definitions
+ n_moving_bodies = 1
+ defining_bndry(1,1) = 3
+ defining_bndry(2,1) = 4
+ n_defining_bndry(1) = 2
+ motion_driver(1) = "aeroelastic"
+ mesh_movement(1) = "deform"
+/
+
+&aeroelastic_modal_data
+ nmode(1) = 9
+ uinf(1) = 279.278306
+ qinf(1) = 47772.777948
+ grefl(1) = 1.000000
+
+ ! Mode 1 of 9 (structural mode 1)
+ freq(1,1) = 3.173319
+ damp(1,1) = 0.000000
+ gmass(1,1) = 1.000000
+ gdisp0(1,1) = 0.000000
+ gvel0(1,1) = 0.000000
+ gforce0(1,1) = 0.000000
+
+ ! Mode 2 of 9 (structural mode 2)
+ freq(2,1) = 10.491666
+ damp(2,1) = 0.000000
+ gmass(2,1) = 1.000000
+ gdisp0(2,1) = 0.000000
+ gvel0(2,1) = 0.000000
+ gforce0(2,1) = 0.000000
+
+ ! Mode 3 of 9 (structural mode 3)
+ freq(3,1) = 17.423215
+ damp(3,1) = 0.000000
+ gmass(3,1) = 1.000000
+ gdisp0(3,1) = 0.000000
+ gvel0(3,1) = 0.000000
+ gforce0(3,1) = 0.000000
+
+ ! Mode 4 of 9 (structural mode 4)
+ freq(4,1) = 24.146088
+ damp(4,1) = 0.000000
+ gmass(4,1) = 1.000000
+ gdisp0(4,1) = 0.000000
+ gvel0(4,1) = 0.000000
+ gforce0(4,1) = 0.000000
+
+ ! Mode 5 of 9 (structural mode 5)
+ freq(5,1) = 45.650785
+ damp(5,1) = 0.000000
+ gmass(5,1) = 1.000000
+ gdisp0(5,1) = 0.000000
+ gvel0(5,1) = 0.000000
+ gforce0(5,1) = 0.000000
+
+ ! Mode 6 of 9 (structural mode 6)
+ freq(6,1) = 51.668618
+ damp(6,1) = 0.000000
+ gmass(6,1) = 1.000000
+ gdisp0(6,1) = 0.000000
+ gvel0(6,1) = 0.000000
+ gforce0(6,1) = 0.000000
+
+ ! Mode 7 of 9 (structural mode 7)
+ freq(7,1) = 56.594081
+ damp(7,1) = 0.000000
+ gmass(7,1) = 1.000000
+ gdisp0(7,1) = 0.000000
+ gvel0(7,1) = 0.000000
+ gforce0(7,1) = 0.000000
+
+ ! Mode 8 of 9 (structural mode 8)
+ freq(8,1) = 70.164145
+ damp(8,1) = 0.000000
+ gmass(8,1) = 1.000000
+ gdisp0(8,1) = 0.000000
+ gvel0(8,1) = 0.000000
+ gforce0(8,1) = 0.000000
+
+ ! Mode 9 of 9 (structural mode 9)
+ freq(9,1) = 89.762052
+ damp(9,1) = 0.000000
+ gmass(9,1) = 1.000000
+ gdisp0(9,1) = 0.000000
+ gvel0(9,1) = 0.000000
+ gforce0(9,1) = 0.000000
+
+/
+
