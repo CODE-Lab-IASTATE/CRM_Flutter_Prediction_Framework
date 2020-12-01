@@ -6,7 +6,7 @@ Code to generate open-source analyses of the AGARD 445.6 wing and uCRM-13.5 wing
  - [ESP/CAPS](https://acdl.mit.edu/ESP) Rev 1.17
  - [MYSTRAN](https://www.mystran.com) Version 6.12
  - [SU2](https://su2code.github.io) Version 6.2.0 "Falcon"
- - Python 2.7 (or later)
+ - Python 2.7
  - numpy
  - matplotlib
 
