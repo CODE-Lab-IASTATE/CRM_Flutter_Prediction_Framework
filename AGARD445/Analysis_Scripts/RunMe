@@ -1,0 +1,15 @@
+#!/bin/bash
+
+./Allclean
+
+echo "
+Generating pyCAPS analyses...
+"
+
+python AGARD_aeroelasticModal_mystranFun3dSu2.py 4 > pyCAPS_output.txt 2>&1
+
+echo "
+Writing surface files...
+"
+
+python Write_surface_position.py

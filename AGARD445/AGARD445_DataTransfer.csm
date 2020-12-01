@@ -1,0 +1,111 @@
+# Design Parameters
+despmtr rootChord[1,1] 0.558698 #1.83300 -- The new distance is the value in meters
+despmtr semiSpan[1,1] 0.762 #2.50000 -- The new distance is the value in meters
+despmtr taperRatio[1,1] 0.66000
+despmtr sweepAngle[1,1] 45.00000
+
+#despmtr nrib 1
+# Author: Brandon Crow
+# Date:   May 1, 2020
+# Description: This case was based upon a couple pyCAPS examples.
+#         "aeroelasticDataTransferSimple.csm" was used to help set up the
+#        farfield and geometry for the CFD simulation. "feaAGARD445.csm"
+#        was used for the AGARD geometry.
+
+#despmtr spar1 0.20
+#despmtr spar2 0.75
+
+# Setup tessallation arrays for OML for CFD sims
+dimension params 1 3 0
+
+# OML
+mark
+   udprim naca Series 0004 sharpTE 1
+   scale taperRatio*rootChord
+   translate semiSpan 0 ((rootChord*.25)+semiSpan)-(.25*taperRatio*rootChord)
+   
+   udprim naca Series 0004 sharpTE 1
+   scale rootChord
+rule
+# OML
+
+ attribute OML 1
+
+ attribute capsGroup $Skin
+ attribute capsLoad $Skin
+ attribute capsMeshLength rootChord
+
+ select face 2
+ attribute capsBound $Skin_Top
+
+ select face 1
+ attribute capsBound $Skin_Bottom
+
+ select face 3
+ attribute capsBound $Skin_Tip
+
+ select face 4
+ attribute capsGroup $Rib_Root
+ attribute capsConstraint $Rib_Root
+
+#set        nedge     @nedge
+   #patbeg     iedge  nedge
+   #   select     edge     iedge
+   #   attribute  capsGroup  $Rib_Root
+   #patend
+
+store OML
+
+
+
+# FEA
+
+	restore OML
+
+# extract shell from OML
+	extract 0
+	
+	select edge 4
+	attribute capsConstraint $Rib_Root
+
+	select edge 6
+	attribute capsConstraint $Rib_Root
+
+	rotatex -90 0 0
+
+	attribute capsIntent $STRUCTURE
+	attribute capsAIM $nastranAIM;astrosAIM;mystranAIM;hsmAIM
+
+
+# CFD
+	box -15*rootChord -30*rootChord 0 71*rootChord 60*rootChord 60*rootChord
+
+	attribute capsGroup $Farfield
+	attribute AFLR_GBC $FARFIELD_UG3_GBC
+
+# Set Wing tessallation parameters for CFD sims
+	set params[1,1] 0.8 #0.4
+	set params[1,2] 0.1 # 0.1
+	set params[1,3] 5.0
+
+ 	select face 5
+ 	attribute capsGroup $SymmPlane
+	attribute AFLR_GBC $STD_UG3_GBC
+	attribute .tParams params
+
+# Set Wing tessellation parameters for CFD sims
+	set params[1,1] 0.15 #0.03
+	set params[1,2] 0.02
+	set params[1,3] 5.0
+
+	restore OML
+	attribute AFLR_GBC $STD_UG3_GBC
+	attribute .tParams params
+
+	subtract none 1 0
+
+	rotatex -90 0 0
+
+	attribute capsMeshLength rootChord
+	attribute capsIntent $CFD
+	attribute capsAIM $fun3dAIM;su2AIM;egadsTessAIM;aflr4AIM;tetgenAIM;aflr3AIM

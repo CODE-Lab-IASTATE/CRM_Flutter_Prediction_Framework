@@ -1,0 +1,3 @@
+#!/bin/sh
+
+rm -r {Aeroelastic*,tmp_*,*.dat} > /dev/null 2>&1
