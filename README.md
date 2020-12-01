@@ -21,9 +21,9 @@ This repository contains the files and scripts that setup and run forced harmoni
 The files in this repository fall into a few main categories: (1) pyCAPS analysis scripts, (2) python scripts for transferring FUN3D modal information to SU2 mesh motion files, and (3) input/output files for each analysis.
 
 ## References
-<sup>1</sup> Thelen, A. S., Leifsson, L. T., and Beran, P. S., "Aeroelastic Flutter Prediction Using Multi-fidelity Modeling of the Aerodynamic Influence Coefficients," *AIAA SciTech Forum*, American Institute of Aeronautics and Astronautics, 2019. https://doi.org/doi:10.2514/6.2019-0609. 
+<sup>1</sup> Thelen, A. S., Leifsson, L. T., and Beran, P. S., "Aeroelastic Flutter Prediction Using Multi-fidelity Modeling of the Aerodynamic Influence Coefficients," *AIAA SciTech Forum*, San Diego, CA, January 7-11, 2019. https://doi.org/doi:10.2514/6.2019-0609. 
 
-<sup>2</sup> Thelen, A., Leifsson, L., and Beran, P., "Multifidelity Flutter Prediction Using Local Corrections to the Generalized AIC," *International Forum on Aeroelasticity and Structural Dynamics (IFASD 2019)*, 2019.
+<sup>2</sup> Thelen, A., Leifsson, L., and Beran, P., "Multifidelity Flutter Prediction Using Local Corrections to the Generalized AIC," *International Forum on Aeroelasticity and Structural Dynamics (IFASD 2019)*, Savannah, GA, June 10-13, 2019.
 
 <sup>3</sup> Yates, Jr., E. C., "AGARD Standard Aeroelastic Configurations for Dynamic Response I - Wing 445.6." In *AGARD Report No. 765*, 1988.
 
