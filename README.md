@@ -4,10 +4,11 @@ Code to generate open-source analyses of the AGARD 445.6 wing and uCRM-13.5 wing
 
 ## Requirements:
  - [ESP/CAPS](https://acdl.mit.edu/ESP) Rev 1.17
- - MYSTRAN
+ - [MYSTRAN](https://www.mystran.com) Version 6.12
  - [SU2](https://su2code.github.io) Version 6.2.0 "Falcon"
- - numpy
- - matplotlib
+ - Python 2.7 (or later)
+ - numpy Version 1.15.0 or later
+ - matplotlib Version 2.2.2 or later
 
 ## Introduction:
 This repository contains the files and scripts that setup and run forced harmonic simulations on the AGARD 445.6 wing <sup>3</sup> and a version of the uCRM-13.5 wing from the University of Michigan MDO Lab <sup>4,5</sup>. The ESP/CAPS scripts that perform the analyses are heavily influenced by the example "aeroelasticModal\_Fun3D\_and\_Mystran.py". The steps to perform an analysis are outlined below:
