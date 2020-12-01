@@ -11,7 +11,7 @@ Code to generate open-source analyses of the AGARD 445.6 wing and uCRM-13.5 wing
  - matplotlib
 
 ## Introduction:
-This repository contains the files and scripts that setup and run forced harmonic simulations on the AGARD 445.6 wing <sup>3</sup> and a version of the uCRM-13.5 wing<sup>4</sup> from the University of Michigan MDO Lab <sup>5,6</sup>. The ESP/CAPS scripts that perform the analyses are heavily influenced by the example "aeroelasticModal\_Fun3D\_and\_Mystran.py". The steps to perform an analysis are outlined below:
+This repository contains the files and scripts that setup and run forced harmonic simulations on the AGARD 445.6 wing <sup>3</sup> and a version of the uCRM-13.5 wing that was used by Beran et al.<sup>4</sup>. The uCRM-13.5 wing was originally published by the University of Michigan MDO Lab <sup>5,6</sup>. The ESP/CAPS scripts that perform the analyses are heavily influenced by the example "aeroelasticModal\_Fun3D\_and\_Mystran.py". The steps to perform an analysis are outlined below:
 
 1. Use the pyCAPS script to perform the structural analysis, and prepare the SU2 mesh files. A FUN3D modal simulation is also prepared.
 2. Use the "Write\_surface\_position.py" script to write the SU2 mesh motion files for the simulation.
@@ -28,7 +28,7 @@ The files in this repository fall into a few main categories: (1) pyCAPS analysi
 
 <sup>3</sup> Yates, Jr., E. C., "AGARD Standard Aeroelastic Configurations for Dynamic Response I - Wing 445.6." In *AGARD Report No. 765*, 1988.
 
-<sup>4</sup> uCRM-13.5 wing from Andrew.
+<sup>4</sup> Beran, P. S., Bryson, D., Thelen, A. S., Diez, M., and Serani, A., "Comparison of Multi-Fidelity Approaches for Military Vehicle Design," *AIAA AVIATION Forum*, Virtual Event, June 15-19, 2020. doi:10.2514/6.2020-3158, URL https://arc.aiaa.org/doi/abs/10.2514/6.2020-3158.
 
 <sup>5</sup>Multidisciplinary Design Optimization Laboratory, "uCRM: undeflected Common Research Model", 2020. URL https://mdolab.engin.umich.edu/wiki/ucrm.html
 
