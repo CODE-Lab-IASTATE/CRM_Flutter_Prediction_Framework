@@ -3,9 +3,9 @@
 Code to generate open-source analyses of the AGARD 445.6 wing and uCRM-13.5 wing with Andrew Thelen's Flutter Analysis Framework<sup>1</sup>
 
 ## Requirements:
- - [ESP/CAPS](https://acdl.mit.edu/ESP)
+ - [ESP/CAPS](https://acdl.mit.edu/ESP) Rev 1.17
  - MYSTRAN
- - [SU2](https://su2code.github.io)
+ - [SU2](https://su2code.github.io) Version 6.2.0 "Falcon"
  - numpy
  - matplotlib
 
