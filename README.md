@@ -21,6 +21,9 @@ This repository contains the files and scripts that setup and run forced harmoni
 ## Contents:
 The files in this repository fall into a few main categories: (1) pyCAPS analysis scripts, (2) python scripts for transferring FUN3D modal information to SU2 mesh motion files, and (3) input/output files for each analysis.
 
+## Acknowledgements:
+This project/material is based upon work supported by the Iowa Space Grant Consortium under NASA Award No. NNX16AL88H.
+
 ## References
 <sup>1</sup> Thelen, A. S., Leifsson, L. T., and Beran, P. S., "Aeroelastic Flutter Prediction Using Multi-fidelity Modeling of the Aerodynamic Influence Coefficients," *AIAA SciTech Forum*, San Diego, CA, January 7-11, 2019. https://doi.org/doi:10.2514/6.2019-0609. 
 
